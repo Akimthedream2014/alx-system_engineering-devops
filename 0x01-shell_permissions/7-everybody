@@ -1,7 +1,2 @@
-file="hello"
-chmod 711 "$file"
-if [ $? -eq 0 ]; then
-    echo "Execute permission added for the owner, group owner, and other users on '$file'."
-else
-    echo "Failed to add execute permission on '$file'."
-fi
+#!/bin/bash
+chmod a+x hello
