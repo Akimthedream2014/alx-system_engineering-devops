@@ -1,8 +1,2 @@
-file="hello"
-chmod u+x,g+x "$file"
-chmod o+r "$file"
-if [ $? -eq 0 ]; then
-    echo "Permissions updated for '$file'."
-else
-    echo "Failed to update permissions for '$file'."
-fi
+#!/bin/bash
+sudo chmod 754 hello
