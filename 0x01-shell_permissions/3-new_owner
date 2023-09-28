@@ -1,3 +1,4 @@
+#!/bin/bash
 file="hello"
 new_owner="betty"
 sudo chown "$new_owner" "$file"
