@@ -1,0 +1,7 @@
+file="hello"
+touch "$file"
+if [ -e "$file" ]; then
+    echo "File '$file' created successfully."
+else
+    echo "Failed to create file '$file'."
+fi

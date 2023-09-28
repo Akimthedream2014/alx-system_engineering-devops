@@ -1,0 +1,8 @@
+file="hello"
+new_owner="betty"
+sudo chown "$new_owner" "$file"
+if [ $? -eq 0 ]; then
+    echo "Owner of '$file' changed to '$new_owner'."
+else
+    echo "Failed to change the owner of '$file' to '$new_owner'."
+fi

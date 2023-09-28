@@ -1,0 +1,8 @@
+file="hello"
+chmod 007 "$file"
+if [ $? -eq 0 ]; then
+    echo "Permissions updated for '$file'."
+else
+    echo "Failed to update permissions for '$file'."
+fi
+
