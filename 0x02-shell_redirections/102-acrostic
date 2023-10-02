@@ -1,6 +1,8 @@
 #!/bin/bash
-while IFS= read -r line; do
-    first_char="${line:0:1}"
-    decoded_message="${decoded_message}${first_char}"
+input=$(cat "$1")
+lines=$(echo "$input" | tr -s "\n" " ")
+first_letters=""
+for line in $lines; do
+  first_letters+="${line:0:1}"
 done
-echo -e "$decoded_message\n"
+echo "$first_letters"
