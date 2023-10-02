@@ -1,4 +1,7 @@
 #!/bin/bash
-input=$(echo "$1")
-output=$(echo "$input" | tr -d "cC")
-echo "$output"
+while IFS= read -r line
+do
+	echo "$line" | tr -d 'cC'
+done
+
+
