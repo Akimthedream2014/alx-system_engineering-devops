@@ -1,0 +1,5 @@
+echo "## /etc/passwd ##"
+cat /etc/passwd
+
+echo "## /etc/hosts ##"
+cat /etc/hosts
