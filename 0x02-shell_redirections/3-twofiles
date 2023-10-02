@@ -1,5 +1,4 @@
-echo "## /etc/passwd ##"
+#!/bin/bash
 cat /etc/passwd
-
-echo "## /etc/hosts ##"
+echo " "
 cat /etc/hosts
