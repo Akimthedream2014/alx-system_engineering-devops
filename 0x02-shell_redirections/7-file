@@ -1,2 +1,8 @@
 #!/bin/bash
-echo "Best School" > '*\\'"Best School"'\\*$?*****:)'
+filename='\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)'
+echo "Best School" > "$filename"
+if [ -e "$filename" ]; then
+  echo "File created successfully: $filename"
+else
+  echo "Error creating the file: $filename"
+fi
