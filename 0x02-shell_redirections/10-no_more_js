@@ -1,4 +1,5 @@
 #!/bin/bash
 find . -type f -name "*.js" -delete
-
+echo "Deleted all .js files."
+exit 0
 
