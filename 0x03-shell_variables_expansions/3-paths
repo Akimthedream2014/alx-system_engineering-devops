@@ -1,2 +1,4 @@
 #!/bin/bash
-echo $((` echo $PATH | grep -o ":/" | wc -1`+1)) 
+IFS=":" read -ra path_array <<< "$PATH"
+count="${#path_array[@]}"
+echo "$count" 
