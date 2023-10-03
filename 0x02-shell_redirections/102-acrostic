@@ -1,8 +1,2 @@
 #!/bin/bash
-input=$(cat "$1")
-lines=$(echo "$input" | tr -s "\n" " ")
-first_letters=""
-for line in $lines; do
-  first_letters+="${line:0:1}"
-done
-echo "$first_letters"
+cut -c1 | paste -s | tr -d "[:blank:]"
