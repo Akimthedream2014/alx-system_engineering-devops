@@ -1,4 +1,4 @@
 #!/bin/bash
-IFS=":" read -ra path_array <<< "$PATH"
-count="${#path_array[@]}"
-echo "$count" 
+PATH_DIRS=(${PATH//:/ })
+NUM_DIRS=${#PATH_DIRS[*]}
+echo "There are $NUM_DIRS directories in the PATH."
